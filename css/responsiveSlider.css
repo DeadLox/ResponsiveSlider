@@ -1,0 +1,78 @@
+/* ----------------------------------
+------- RESPONSIVE SLIDER -----------
+------------------------------------*/
+.slider ul {
+	list-style-type: none;
+}
+.cadreResponsiveSlider {
+	width:auto;
+	height: auto;
+	margin: 0 auto;
+	position:relative;
+	list-style-type: none;
+}
+.cadreResponsiveSlider .responsiveSlider {
+	position:relative;
+	overflow:hidden;
+	box-shadow: 0 0 10px black;
+	border-radius:10px;
+}
+.cadreResponsiveSlider .responsiveSlider ul {
+	position:absolute;
+	margin:0;
+	padding:0;
+}
+.cadreResponsiveSlider .responsiveSlider ul li {
+	float:left;
+	margin:0;
+	padding:0;
+	text-align: center;
+	overflow:hidden;
+}
+.cadreResponsiveSlider .responsiveSlider ul li img {
+	display: block;
+	max-width: 100%;
+	margin:0 auto;
+}
+/* --- Controls --- */
+.cadreResponsiveSlider .controls {
+	text-align: center;
+	cursor: pointer;
+	width:40px;
+	height: 40px;
+	position: absolute;
+	top:50%;
+	margin-top:-20px;
+	z-index:10;
+}
+.cadreResponsiveSlider .back{
+	left:10px;
+	background: url(../images/icon-prev.png) no-repeat center;
+}
+.cadreResponsiveSlider .next{
+	right:10px;
+	background: url(../images/icon-next.png) no-repeat center;
+}
+/* --- Pager --- */
+.cadreResponsiveSlider .responsiveSliderPager {
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	padding:0;
+	position:absolute;
+	bottom:10px;
+	list-style-type: none;
+	text-align: center;
+}
+.cadreResponsiveSlider .responsiveSliderPager li {
+	display: inline-block;
+	width:14px;
+	height:14px;
+	margin:0 2px;
+	cursor: pointer;
+	background-image: url(../images/bullet-empty.png);
+	background-repeat: no-repeat;
+}
+.cadreResponsiveSlider .responsiveSliderPager li.selected {
+	background-image: url(../images/bullet.png);
+}

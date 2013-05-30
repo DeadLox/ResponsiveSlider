@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr-FR">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive Slider</title>
+	<link rel="stylesheet" href="css/responsiveSlider.css">
+	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="responsiveSlider.js"></script>
+</head>
+<body>
+		<ul class="slider">
+			<li class="slides"><img src="images/Chrysanthemum.jpg" alt="" /></li>
+			<li class="slides"><img src="images/Desert.jpg" alt="" /></li>
+			<li class="slides"><img src="images/Hydrangeas.jpg" alt="" /></li>
+			<li class="slides"><img src="images/Jellyfish.jpg" alt="" /></li>
+			<li class="slides"><img src="images/Koala.jpg" alt="" /></li>
+			<li class="slides"><img src="images/Lighthouse.jpg" alt="" /></li>
+			<li class="slides"><img src="images/Penguins.jpg" alt="" /></li>
+			<li class="slides"><img src="images/Tulips.jpg" alt="" /></li>
+		</ul>
+	<script type="text/javascript">
+		$('.slider').responsiveSlider({
+				debug: false,
+				speed: "slow",
+				nbSlideShow: 1,
+				autoPlay: false,
+				delay: 1500,
+				infiniteLoop: true,
+				resizeContent:false,
+				enableResponsive: true,
+				maxHeight:300,
+				hideNav:true,
+				enablePager:true,
+				hidePager:true,
+				animateResizeHeight:false,
+			});
+	</script>
+</body>
+</html>
