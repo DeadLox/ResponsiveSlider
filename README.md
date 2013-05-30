@@ -1,0 +1,4 @@
+ResponsiveSlider
+================
+
+Slider responsive
